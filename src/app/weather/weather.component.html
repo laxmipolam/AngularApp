@@ -1,0 +1,9 @@
+
+<div>
+  <label>Date:
+    <input type="date" [(ngModel)]="weather.DATE" placeholder="YYYYMM"/>
+  </label>
+  <button type="submit" class="btn btn-default" (click)="getCall(weather.DATE)">Get Forecast</button>
+  <div id="chartContainer" style="height: 370px; width: 55%;padding-left:10%;"></div>
+  <div id="chartContainer2" style="height: 370px; width: 55%;padding-left:10%;"></div>
+</div>
