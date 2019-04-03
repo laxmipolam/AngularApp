@@ -19,7 +19,9 @@ Used angular service calls and Observables for for serving GET and Post requests
 # Functionality:
 
 Select some date for which you want to forecast data for the next 5 days.
+
 You will get a forecast graph of (minimum temperature and maximum temperature) based on average from previous years data.
+
 Other graph will show minimum temperature and maximum temperature graph of coming 5 days (Irrespective of the selected date).
 
 
