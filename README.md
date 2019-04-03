@@ -1,27 +1,28 @@
 # MyApp
-
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+App Details:
+This app is to forecast weather for next 5 days for given date. This forecasts based on average of previous years data.
 
-## Code scaffolding
+It also given weather forecast for coming 5 days from third party api called Accuweather.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+--Code is placed in src/app/weather/weather.component,ts
+--<app-weather> component is rendered in src/app/app.component.html
+It used chartJS Javascript library to plot charts.  
 
-## Build
+It is using api "http://ec2-3-16-181-53.us-east-2.compute.amazonaws.com".
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+# Code is placed in src/app/weather.service,ts
+Used angular service calls and Observables for for serving GET and Post requests. 
 
-## Running unit tests
+Functionality:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Select some date for which you want to forecast data for the next 5 days.
 
-## Running end-to-end tests
+You will get a forecast graph of (minimum temperature and maximum temperature) based on average from previous years data.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Other graph will show minimum temperature and maximum temperature graph of coming 5 days (Irrespective of the selected date).
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
